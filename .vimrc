@@ -49,5 +49,9 @@ set expandtab      " use spaces not tabs
 "" Hide pyc files in NERDTree
 let NERDTreeIgnore = ['\.pyc$']
 
+"" auto open NERDTree if vim is started without any file
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
 "" Stop beeping!!
 set noeb vb t_vb=
