@@ -71,9 +71,6 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 "" NerdTree Toggle to Command+1. Works only in MacVim
 map <D-1> :NERDTreeToggle<CR>
 
-
-
-
 "" Read PDF files and wrap lines # NOT WOKRING :(
 command! -complete=file -nargs=1 Rpdf :r !pdftotext -nopgbrk <q-args> - |fmt -csw78
 
