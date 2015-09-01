@@ -2,8 +2,16 @@ set nocompatible
 syntax enable
 set nu
 set showcmd
+set title
+set cursorline
 
 filetype off
+
+
+let g:neocomplcache_enable_at_startup = 1
+
+filetype plugin indent on
+
 
 call plug#begin('~/.vim/plugged')
 
@@ -12,11 +20,8 @@ Plug 'scrooloose/syntastic'
 Plug 'mattn/emmet-vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'tpope/vim-fugitive'
-
-" colorschemes
-Plug 'chriskempson/base16-vim'
-Plug 'morhetz/gruvbox'
-Plug 'w0ng/vim-hybrid'
+Plug 'bling/vim-airline'
+Plug 'kien/ctrlp.vim'
 
 Plug 'davidhalter/jedi-vim', { 'for': 'python' }
 Plug 'wting/rust.vim', { 'for': 'rust' }
@@ -24,24 +29,16 @@ Plug 'fatih/vim-go', { 'for': 'go' }
 Plug 'jelera/vim-javascript-syntax', { 'for': 'javascript' }
 " Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 
-Plug 'bling/vim-airline'
-
-"" Vim fuzzy file finder ctrlp
-Plug 'kien/ctrlp.vim'
-
 Plug 'zefei/vim-colortuner'
 
+" colorschemes
+Plug 'w0ng/vim-hybrid'
+
 call plug#end()
-
-let g:neocomplcache_enable_at_startup = 1
-
-filetype plugin indent on
-
 set t_Co=256
 set background=dark
 
 colorscheme hybrid
-""" if has("gui_running") colorscheme gruvbox endif
 
 let g:airline_theme='tomorrow'
 
@@ -61,6 +58,12 @@ set expandtab       " use spaces not tabs
 
 set showmatch       " show matching paranthesis
 
+" Fix page up and down
+map <PageUp> <C-U>
+map <PageDown> <C-D>
+imap <PageUp> <C-O><C-U>
+imap <PageDown> <C-O><C-D>
+
 "" Hide pyc files in NERDTree
 let NERDTreeIgnore = ['\.pyc$']
 
@@ -73,6 +76,9 @@ map <D-1> :NERDTreeToggle<CR>
 
 "" Read PDF files and wrap lines # NOT WOKRING :(
 command! -complete=file -nargs=1 Rpdf :r !pdftotext -nopgbrk <q-args> - |fmt -csw78
+
+"" Disable swapfiles (!!!)
+set noswapfile
 
 "" Stop beeping!!
 set noeb vb t_vb=
