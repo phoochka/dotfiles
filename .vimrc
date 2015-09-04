@@ -25,6 +25,7 @@ Plug 'junegunn/vim-easy-align'
 Plug 'tpope/vim-fugitive'
 Plug 'bling/vim-airline'
 Plug 'kien/ctrlp.vim'
+Plug 'tomtom/tcomment_vim'
 
 Plug 'davidhalter/jedi-vim', { 'for': 'python' }
 Plug 'wting/rust.vim', { 'for': 'rust' }
