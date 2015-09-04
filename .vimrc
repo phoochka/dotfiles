@@ -12,6 +12,9 @@ let g:neocomplcache_enable_at_startup = 1
 
 filetype plugin indent on
 
+" To first get vim-plug: 
+" curl -fLo ~/.vim/autoload/plug.vim --create-dirs \ 
+"    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 call plug#begin('~/.vim/plugged')
 
@@ -27,7 +30,7 @@ Plug 'davidhalter/jedi-vim', { 'for': 'python' }
 Plug 'wting/rust.vim', { 'for': 'rust' }
 Plug 'fatih/vim-go', { 'for': 'go' }
 Plug 'jelera/vim-javascript-syntax', { 'for': 'javascript' }
-" Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
+" Plug 'pangloss/vim-javascript', { 'for': 'javascript' } " outdated
 
 Plug 'zefei/vim-colortuner'
 
