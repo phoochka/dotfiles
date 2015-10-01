@@ -7,9 +7,6 @@ set cursorline
 
 filetype off
 
-
-let g:neocomplcache_enable_at_startup = 1
-
 filetype plugin indent on
 
 " To first get vim-plug: 
@@ -24,29 +21,40 @@ Plug 'mattn/emmet-vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'tpope/vim-fugitive'
 Plug 'bling/vim-airline'
+Plug 'edkolev/tmuxline.vim'
 Plug 'kien/ctrlp.vim'
 Plug 'tomtom/tcomment_vim'
 
+" Language specific plugs
+Plug 'lervag/vimtex', { 'for': 'tex' }
 Plug 'davidhalter/jedi-vim', { 'for': 'python' }
 Plug 'wting/rust.vim', { 'for': 'rust' }
 Plug 'fatih/vim-go', { 'for': 'go' }
 Plug 'jelera/vim-javascript-syntax', { 'for': 'javascript' }
 " Plug 'pangloss/vim-javascript', { 'for': 'javascript' } " outdated
 
+" WTF is this I dont remember
 Plug 'zefei/vim-colortuner'
+
+" Integration with Simplenote
+Plug 'mrtazz/simplenote.vim'
 
 " colorschemes
 Plug 'w0ng/vim-hybrid'
 
 call plug#end()
+
 set t_Co=256
 set background=dark
 
 colorscheme hybrid
 
 let g:airline_theme='tomorrow'
+let g:airline_powerline_fonts = 1
 
-set guifont=Consolas:h13
+"" Patched font for Airline powerline fonts
+set guifont=Powerline\ Consolas:h13
+"" set guifont=Consolas:h13
 
 "" Searching 
 set hlsearch        " highlight matches
@@ -55,12 +63,18 @@ set ignorecase      " searches are case insensitive
 set smartcase       " unless they contain at least one captial letter
 
 "" Whitespace settings for Python
-" set nowrap        " dont wrap lines
+"" set nowrap        " dont wrap lines
 set shiftwidth=4    " a tab is two spaces
 set tabstop=4
 set expandtab       " use spaces not tabs
 
 set showmatch       " show matching paranthesis
+
+" Navigate between splits with ctrl+hjkl
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
 
 " Fix page up and down
 map <PageUp> <C-U>
