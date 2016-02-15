@@ -23,7 +23,6 @@ Plug 'tpope/vim-fugitive'
 Plug 'bling/vim-airline'
 Plug 'kien/ctrlp.vim'
 Plug 'tomtom/tcomment_vim'
-Plug 'Valloric/YouCompleteMe'
 
 " Language specific plugs
 " Plug 'davidhalter/jedi-vim', { 'for': 'python' }
@@ -40,8 +39,9 @@ Plug 'mrtazz/simplenote.vim'
 
 " colorschemes
 Plug 'w0ng/vim-hybrid'
-Plug 'kristijanhusak/vim-hybrid-material'
 Plug 'chriskempson/vim-tomorrow-theme'
+Plug 'sjl/badwolf'
+Plug 'morhetz/gruvbox'
 
 call plug#end()
 
@@ -49,7 +49,7 @@ set t_Co=256
 set background=dark
 
 " let g:hybrid_use_Xresources = 1
-colorscheme hybrid
+colorscheme hybrid 
 
 let g:airline_theme='tomorrow'
 let g:airline_powerline_fonts = 1
