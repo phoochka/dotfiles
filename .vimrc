@@ -20,15 +20,19 @@ Plug 'junegunn/vim-easy-align'
 Plug 'junegunn/goyo.vim'
 Plug 'mhinz/vim-startify'
 Plug 'tpope/vim-fugitive'
-Plug 'bling/vim-airline'
 Plug 'kien/ctrlp.vim'
 Plug 'tomtom/tcomment_vim'
 
+" Vim Airline and Airline Themes
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+
 " Language specific plugs
-" Plug 'davidhalter/jedi-vim', { 'for': 'python' }
+Plug 'davidhalter/jedi-vim', { 'for': 'python' }
 Plug 'wting/rust.vim', { 'for': 'rust' }
 Plug 'fatih/vim-go', { 'for': 'go' }
 Plug 'jelera/vim-javascript-syntax', { 'for': 'javascript' }
+Plug 'Glench/Vim-Jinja2-Syntax'
 " Plug 'pangloss/vim-javascript', { 'for': 'javascript' } " outdated
 
 " WTF is this I dont remember
@@ -40,23 +44,25 @@ Plug 'mrtazz/simplenote.vim'
 " colorschemes
 Plug 'w0ng/vim-hybrid'
 Plug 'chriskempson/vim-tomorrow-theme'
-Plug 'sjl/badwolf'
-Plug 'morhetz/gruvbox'
 
 call plug#end()
 
 set t_Co=256
 set background=dark
 
-" let g:hybrid_use_Xresources = 1
+let g:hybrid_custom_term_colors = 1
+let g:hybrid_reduced_contrast = 1
 colorscheme hybrid 
 
 let g:airline_theme='tomorrow'
-let g:airline_powerline_fonts = 1
 
+let g:airline_powerline_fonts = 0
 "" Patched font for Airline powerline fonts
 set guifont=Powerline\ Consolas:h13
 "" set guifont=Consolas:h13
+
+"" Make comments in italcis
+highlight Comment cterm=italic
 
 "j/k should go up/down through VISIBLE lines, even if real lines wrap.
 nnoremap j gj
@@ -123,7 +129,7 @@ command! -complete=file -nargs=1 Rpdf :r !pdftotext -nopgbrk <q-args> - |fmt -cs
 "" Disable swapfiles (!!!)
 set noswapfile
 
-"" Stop beeping!!
+"" Stop beeping
 set noeb vb t_vb=
 
 "python with virtualenv support
