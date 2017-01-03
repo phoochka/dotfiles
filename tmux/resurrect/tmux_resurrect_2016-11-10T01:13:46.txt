@@ -1,3 +1,0 @@
-pane	MAIN	0	:bash	1	:*	0	:/Users/gaurav/Code/phoo.xyz	1	bash	:
-window	MAIN	0	1	:*	ccbd,118x57,0,0,0
-state	MAIN	

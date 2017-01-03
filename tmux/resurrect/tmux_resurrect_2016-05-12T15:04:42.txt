@@ -1,4 +1,0 @@
-pane	THESIS	0	:Vim	1	:*	0	:/Users/gaurav/Dropbox/Work/MS Thesis/Thesis	0	Vim	:/usr/local/Cellar/macvim/7.4-101/MacVim.app/Contents/MacOS/Vim problem.tex
-pane	THESIS	0	:Vim	1	:*	1	:/Users/gaurav/Dropbox/Work/MS Thesis/Thesis	1	Vim	:/usr/local/Cellar/macvim/7.4-101/MacVim.app/Contents/MacOS/Vim main.tex
-window	THESIS	0	1	:*	2a90,238x59,0,0[238x41,0,0,1,238x17,0,42,2]
-state	THESIS	

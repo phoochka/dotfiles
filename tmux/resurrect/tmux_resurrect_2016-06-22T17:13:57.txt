@@ -1,6 +1,0 @@
-pane	JAVA	0	:vim	0	:-	0	:/Users/gaurav/random snip	1	vim	:vim Paren.java
-pane	JAVA	0	:vim	0	:-	1	:/Users/gaurav/random snip	0	bash	:
-pane	JAVA	1	:bash	1	:*	0	:/Users/gaurav/Code/Network-Pruning	1	bash	:
-window	JAVA	0	0	:-	7060,112x64,0,0[112x52,0,0,0,112x11,0,53,1]
-window	JAVA	1	1	:*	bfbf,112x64,0,0,2
-state	JAVA	

@@ -1,4 +1,0 @@
-pane	THESIS	0	:Vim	1	:*	0	:/Users/gaurav/Dropbox/Work/MS Thesis/Thesis	1	Vim	:/usr/local/Cellar/macvim/7.4-101/MacVim.app/Contents/MacOS/Vim main.tex
-pane	THESIS	0	:Vim	1	:*	1	:/Users/gaurav/Dropbox/Work/MS Thesis/Thesis	0	bash	:
-window	THESIS	0	1	:*	0f20,118x63,0,0[118x51,0,0,0,118x11,0,52,1]
-state	THESIS	
