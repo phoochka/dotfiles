@@ -1,0 +1,12 @@
+pane	0	0	:bash	1	:*	0	:/Users/gaurav	1	bash	:
+pane	MAIN	0	:DEV	0	:	0	:/Users/gaurav/Code/phoo.xyz	1	bash	:
+pane	MAIN	0	:DEV	0	:	1	:/Users/gaurav/Code/phoo.xyz	0	bash	:
+pane	MAIN	1	:CONFIG	0	:	0	:/Users/gaurav	1	Vim	:/usr/local/Cellar/macvim/8.0-114/MacVim.app/Contents/MacOS/Vim -g -v .tmux.conf
+pane	MAIN	2	:ghc	0	:-	0	:/Users/gaurav/Code/phoo.xyz	1	bash	:
+pane	MAIN	3	:bash	1	:*	0	:/Users/gaurav/Code/phoo.xyz	1	bash	:
+window	0	0	1	:*	cc9d,204x48,0,0,0
+window	MAIN	0	0	:	075f,204x49,0,0[204x32,0,0,1,204x16,0,33,2]
+window	MAIN	1	0	:	d0a0,204x49,0,0,3
+window	MAIN	2	0	:-	d0a1,204x49,0,0,4
+window	MAIN	3	1	:*	d0a2,204x49,0,0,5
+state	0	

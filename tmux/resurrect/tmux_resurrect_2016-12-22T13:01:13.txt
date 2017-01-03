@@ -1,0 +1,11 @@
+pane	MAIN	0	:nvim	0	:-	0	:/Users/gaurav/Code/phoo.xyz	1	nvim	:nvim package.json
+pane	MAIN	0	:nvim	0	:-	1	:/Users/gaurav/Code/phoo.xyz	0	node	:npm  
+pane	MAIN	1	:CONFIG	1	:*	0	:/Users/gaurav	1	nvim	:nvim .tmux.conf
+pane	MAIN	2	:streams	0	:	0	:/Users/gaurav	0	bash	:
+pane	MAIN	2	:streams	0	:	1	:/Users/gaurav	1	bash	:
+pane	MAIN	3	:bash	0	:	0	:/Users/gaurav	1	bash	:
+window	MAIN	0	0	:-	792a,204x55,0,0[204x46,0,0,1,204x8,0,47,2]
+window	MAIN	1	1	:*	c2a0,204x55,0,0,3
+window	MAIN	2	0	:	dae2,204x55,0,0[204x29,0,0,4,204x25,0,30,5]
+window	MAIN	3	0	:	c2a3,204x55,0,0,6
+state	MAIN	

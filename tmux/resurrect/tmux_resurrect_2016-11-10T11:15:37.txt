@@ -1,0 +1,10 @@
+pane	MAIN	0	:DEV	1	:*	0	:/Users/gaurav/Code/phoo.xyz	1	Vim	:/usr/local/Cellar/macvim/8.0-114/MacVim.app/Contents/MacOS/Vim -g -v README.md
+pane	MAIN	0	:DEV	1	:*	1	:/Users/gaurav/Code/phoo.xyz	0	bash	:
+pane	MAIN	1	:CONFIG	0	:-	0	:/Users/gaurav	1	Vim	:/usr/local/Cellar/macvim/8.0-114/MacVim.app/Contents/MacOS/Vim -g -v .tmux.conf
+pane	MAIN	2	:ghc	0	:	0	:/Users/gaurav/Code/phoo.xyz	1	ghc	:/Library/Frameworks/GHC.framework/Versions/8.0.1-x86_64/usr/lib/ghc-8.0.1/bin/ghc -B/Library/Frameworks/GHC.framework/Versions/8.0.1-x86_64/usr/lib/ghc-8.0.1 --interactive
+pane	MAIN	3	:bash	0	:	0	:/Users/gaurav/Code/phoo.xyz	1	bash	:
+window	MAIN	0	1	:*	88fd,208x52,0,0{134x52,0,0,0,73x52,135,0,10}
+window	MAIN	1	0	:-	b89e,208x52,0,0,1
+window	MAIN	2	0	:	b8a4,208x52,0,0,7
+window	MAIN	3	0	:	5c80,208x52,0,0,11
+state	MAIN	

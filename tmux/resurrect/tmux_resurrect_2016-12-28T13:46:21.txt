@@ -1,0 +1,13 @@
+pane	MAIN	0	:nvim	0	:	0	:/Users/gaurav/Code/phoo.xyz	1	nvim	:nvim src/App.js
+pane	MAIN	0	:nvim	0	:	1	:/Users/gaurav/Code/phoo.xyz	0	bash	:
+pane	MAIN	1	:CONFIG	0	:	0	:/Users/gaurav	1	bash	:
+pane	MAIN	2	:streams	0	:	0	:/Users/gaurav	1	bash	:
+pane	MAIN	2	:streams	0	:	1	:/Users/gaurav	0	bash	:
+pane	MAIN	3	:bash	0	:-	0	:/Users/gaurav	1	bash	:
+pane	MAIN	4	:nvim	1	:*	0	:/Users/gaurav/Code/xi-editor	1	nvim	:nvim rust/src/main.rs
+window	MAIN	0	0	:	2f59,204x50,0,0[204x33,0,0,2,204x16,0,34,3]
+window	MAIN	1	0	:	aea2,204x50,0,0,5
+window	MAIN	2	0	:	2f63,204x50,0,0[204x33,0,0,6,204x16,0,34,7]
+window	MAIN	3	0	:-	aea5,204x50,0,0,8
+window	MAIN	4	1	:*	5783,204x50,0,0,14
+state	MAIN	

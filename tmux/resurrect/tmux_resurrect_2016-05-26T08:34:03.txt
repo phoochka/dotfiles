@@ -1,0 +1,7 @@
+pane	RUST	0	:bash	0	:-	0	:/Users/gaurav	0	bash	:
+pane	RUST	0	:bash	0	:-	1	:/Users/gaurav	1	bash	:
+pane	RUST	1	:Vim	1	:*	0	:/Users/gaurav	1	Vim	:/usr/local/Cellar/macvim/7.4-103/MacVim.app/Contents/MacOS/Vim Code/rust/src/main.rs
+pane	RUST	1	:Vim	1	:*	1	:/Users/gaurav/Code/rust	0	bash	:
+window	RUST	0	0	:-	d928,238x59,0,0{120x59,0,0,0,117x59,121,0,1}
+window	RUST	1	1	:*	5a13,238x59,0,0[238x36,0,0,2,238x22,0,37,3]
+state	RUST	

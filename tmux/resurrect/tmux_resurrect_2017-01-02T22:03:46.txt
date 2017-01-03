@@ -1,0 +1,18 @@
+pane	0	0	:bash	1	:*	0	:/Users/gaurav	1	bash	:
+pane	MAIN	0	:nvim	0	:-	0	:/Users/gaurav/Code/phoo.xyz	0	bash	:
+pane	MAIN	0	:nvim	0	:-	1	:/Users/gaurav/Code/phoo.xyz	1	bash	:
+pane	MAIN	1	:CONFIG	1	:*	0	:/Users/gaurav	1	nvim	:nvim .vimrc
+pane	MAIN	2	:dfhack	0	:	0	:/Users/gaurav/Code/dfhack	0	nvim	:nvim index.rst
+pane	MAIN	2	:dfhack	0	:	1	:/Users/gaurav	1	bash	:
+pane	MAIN	2	:dfhack	0	:	2	:/Users/gaurav	0	python3.5	:python
+pane	MAIN	3	:spotify	0	:	0	:/Users/gaurav	1	bash	:/Applications/Google Chrome.app/Contents/MacOS/Google Chrome --app=https://play.spotify.com
+pane	MAIN	4	:misc	0	:	0	:/Users/gaurav/Code/dfhack	1	bash	:
+pane	MAIN	5	:bash	0	:	0	:/Users/gaurav/Documents/EVE/Overview	1	bash	:
+window	0	0	1	:*	b25e,80x24,0,0,1
+window	MAIN	0	0	:-	0668,139x47,0,0[139x30,0,0,2,139x16,0,31,3]
+window	MAIN	1	1	:*	cbc1,139x47,0,0,4
+window	MAIN	2	0	:	c8cb,139x47,0,0[139x33,0,0,5,139x13,0,34{69x13,0,34,10,69x13,70,34,12}]
+window	MAIN	3	0	:	cbc3,139x47,0,0,6
+window	MAIN	4	0	:	cbc4,139x47,0,0,7
+window	MAIN	5	0	:	cbc5,139x47,0,0,8
+state	MAIN	0

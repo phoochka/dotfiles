@@ -9,9 +9,9 @@ export PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
 # Setting JAVA HOME
 export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
 # Setting Maven
-export M2_HOME=/usr/local/apache-maven/apache-maven-3.3.9
-export M2=$M2_HOME/bin
-export PATH=$M2:$PATH
+export M3_HOME=/usr/local/apache-maven/apache-maven-3.3.9
+export M3=$M3_HOME/bin
+export PATH=$M3:$PATH
 ####################
 
 # Grep highlight matches
@@ -39,9 +39,26 @@ alias l='ls -CF'
 # ssh vm
 alias ssh='TERM=xterm-256color ssh'
 alias ubu='ssh phoochka@45.55.209.90 -p 2242'
+# alias nile='ssh gaurav@nile.cs.albany.edu'
+# alias nidea='ssh -X gaurav@nile.cs.albany.edu'
 
+# use updated vim
+alias v='vim'
+# alias vim='mvim -v'
+# use neovim instead
+alias vim='nvim'
+
+alias tm='tmux a'
+
+# chrome spotify
+alias sp='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --app=https://play.spotify.com &'
 # twitch csgo
 alias esl='livestreamer twitch.tv/ESL_CSGO high'
+alias mlg='livestreamer twitch.tv/MLG high'
+alias dreamhack='livestreamer twitch.tv/DreamhackCS high'
+
+# packet loss 
+alias loss='ping -c 10 www.google.com | grep 'loss''
 
 # added by Anaconda3 2.4.0 installer
 export PATH="/Users/gaurav/anaconda/bin:$PATH"

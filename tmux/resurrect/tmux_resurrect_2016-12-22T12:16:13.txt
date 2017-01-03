@@ -1,0 +1,11 @@
+pane	MAIN	0	:nvim	0	:-	0	:/Users/gaurav/Code/phoo.xyz	1	nvim	:nvim package.json
+pane	MAIN	0	:nvim	0	:-	1	:/Users/gaurav/Code/phoo.xyz	0	bash	:
+pane	MAIN	1	:CONFIG	1	:*	0	:/Users/gaurav	1	nvim	:nvim .vimrc
+pane	MAIN	2	:streams	0	:	0	:/Users/gaurav	0	bash	:
+pane	MAIN	2	:streams	0	:	1	:/Users/gaurav	1	bash	:
+pane	MAIN	3	:bash	0	:	0	:/Users/gaurav	1	bash	:
+window	MAIN	0	0	:-	f9dc,204x56,0,0[204x35,0,0,1,204x20,0,36,2]
+window	MAIN	1	1	:*	c6a0,204x56,0,0,3
+window	MAIN	2	0	:	e4e4,204x56,0,0[204x28,0,0,4,204x27,0,29,5]
+window	MAIN	3	0	:	c6a3,204x56,0,0,6
+state	MAIN	

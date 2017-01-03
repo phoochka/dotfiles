@@ -1,0 +1,5 @@
+pane	MAIN	0	:bash	0	:-	0	:/Users/gaurav/Code/phoo.xyz	1	bash	:
+pane	MAIN	1	:Vim	1	:*	0	:/Users/gaurav	1	Vim	:/usr/local/Cellar/macvim/8.0-114/MacVim.app/Contents/MacOS/Vim -g -v .tmux.conf
+window	MAIN	0	0	:-	ccbd,118x57,0,0,0
+window	MAIN	1	1	:*	ccbe,118x57,0,0,1
+state	MAIN	
