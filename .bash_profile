@@ -2,8 +2,6 @@ if [ -f ~/.bashrc ]; then . ~/.bashrc; fi
 
 export CLICOLOR=1
 
-# Setting PATH for Python 2.7
-export PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
 
 ###### JAVA STUFF ###### 
 # Setting JAVA HOME
@@ -42,7 +40,6 @@ alias ubu='ssh phoochka@45.55.209.90 -p 2242'
 # alias nile='ssh gaurav@nile.cs.albany.edu'
 # alias nidea='ssh -X gaurav@nile.cs.albany.edu'
 
-# use updated vim
 alias v='vim'
 # alias vim='mvim -v'
 # use neovim instead
@@ -52,13 +49,9 @@ alias tm='tmux a'
 
 # chrome spotify
 alias sp='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --app=https://play.spotify.com &'
-# twitch csgo
-alias esl='livestreamer twitch.tv/ESL_CSGO high'
-alias mlg='livestreamer twitch.tv/MLG high'
-alias dreamhack='livestreamer twitch.tv/DreamhackCS high'
 
 # packet loss 
 alias loss='ping -c 10 www.google.com | grep 'loss''
 
-# added by Anaconda3 2.4.0 installer
-export PATH="/Users/gaurav/anaconda/bin:$PATH"
+# Adding rust bin
+export PATH="$HOME/.cargo/bin:$PATH"

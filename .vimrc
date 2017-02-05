@@ -43,40 +43,37 @@ Plug 'octol/vim-cpp-enhanced-highlight', { 'for': 'cpp' }
 
 Plug 'pangloss/vim-javascript'
 Plug 'othree/yajs.vim'
+Plug 'chemzqm/vim-jsx-improve'
 Plug 'mklabs/jscs.vim', { 'do': 'npm i jscs -g' }
 Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
 Plug 'ternjs/tern_for_vim', {'do': 'npm install'}
 
-
 " Latex
 Plug 'lervag/vimtex'
-
 
 " colorschemes
 Plug 'w0ng/vim-hybrid'
 Plug 'chriskempson/vim-tomorrow-theme'
 Plug 'morhetz/gruvbox'
 Plug 'sjl/badwolf'
-Plug 'rakr/vim-one'
 Plug 'trusktr/seti.vim'
 Plug 'whatyouhide/vim-gotham'
 Plug 'tyrannicaltoucan/vim-deep-space'
 Plug 'easysid/mod8.vim'
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'rakr/vim-two-firewatch'
-Plug 'jacoborus/tender'
 Plug 'cseelus/vim-colors-lucid'
 Plug 'albertorestifo/github.vim'
 Plug 'cocopon/iceberg.vim'
-Plug 'zanglg/nova.vim'
 
 call plug#end()
 
 set t_Co=256
 " set background=dark
 
-let g:hybrid_custom_term_colors = 1
-let g:hybrid_reduced_contrast = 1
+" let g:hybrid_custom_term_colors = 1
+" let g:hybrid_reduced_contrast = 1
+"
 colorscheme mod8
 
 " set termguicolors
@@ -90,8 +87,11 @@ endif
 let g:airline_theme='tomorrow'
 " let g:airline_powerline_fonts = 1
 
-let g:airline#extensions#tabline#enabled = 0
+let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#whitespace#enabled = 0
+
+let g:airline_section_error = ''
+let g:airline_section_warning = ''
 
 
 set guifont=Consolas:h13
@@ -118,8 +118,7 @@ set nocompatible
 set nu
 set showcmd
 set title
-set cursorline
-
+set cursorline 
 "j/k should go up/down through VISIBLE lines, even if real lines wrap.
 nnoremap j gj
 nnoremap k gk
@@ -164,6 +163,9 @@ nnoremap <c-down> :m+<CR>
 vnoremap <c-up> :m-2<CR>gv
 vnoremap <c-down> :m'>+<CR>gv
 
+" NERDTree settings
+map <C-n> :NERDTreeToggle<CR>
+
 "" Hide pyc files in NERDTree
 let NERDTreeIgnore = ['\.pyc$']
 
@@ -188,6 +190,10 @@ set t_8b=^[[48;2;%lu;%lu;%lum  " Ditto
 " previous-history instead of down and up. If you don't like the change,
 " explicitly bind the keys to down and up in your $FZF_DEFAULT_OPTS.
 let g:fzf_history_dir = '~/.local/share/fzf-history'
+
+" javascript settings
+let g:javascript_plugin_flow = 1
+let g:jsx_ext_required = 0
 
 " deoplete settings
 let g:deoplete#enable_at_startup = 1

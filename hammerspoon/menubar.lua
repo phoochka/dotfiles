@@ -5,10 +5,11 @@ local weatherBar = hs.menubar.new()
 
 local apiKey = nil
 
+
 function menubar.init()
   if file_exists("forecast_io_api_key.lua") then
     apiKey = require "forecast_io_api_key"
-    -- apiKey = "3696c84cd045519e86fd2f9774b5b4c9"
+
     updateWeatherBar()
     hs.timer.doEvery(15*60, updateWeatherBar)
   else
@@ -25,6 +26,10 @@ function updateWeatherBar()
     -- '/' ..
     -- math.floor(w.daily.data[1].temperatureMax + 0.5))
     weatherBar:setMenu(genWeatherBarMenu(w))
+
+    if w.currently.icon == 'rain' then
+      hs.alert.show('It\'s raining, yo!')
+    end
   end)
 end
 
